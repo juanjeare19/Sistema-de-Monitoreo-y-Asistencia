@@ -1,0 +1,264 @@
+<!----------------------------------------------------------------------------------------- 
+:*                         TECNOLOGICO NACIONAL DE MEXICO
+:*                       INSTITUTO TECNOLOGICO DE LA LAGUNA
+:*                     INGENIERIA EN SISTEMAS COMPUTACIONALES
+:*                       PROYECTO DE GESTION DE PROYECTOS
+:*
+:*                            SEMESTRE: AGO-DIC/2021    
+:*
+:*                              HTML layout
+:*
+:*  Archivo     : layout.html
+:*  Autor       : CV Studio
+:*  Fecha       : 11/Oct/2021
+:*  Descripcion : Clase que contiene el header y footer de cada 
+:*                
+:*  Ultima modif:
+:*  Fecha       Modificacion             Motivo
+:*  11/10/2021  Se agrego el Header     Necesario en cada docuemnto html
+:*  14/10/2021  Se agrego el footer     Necesario en cada docuemnto html
+:*==========================================================================================
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Monitoreo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- Choices CSS-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Script graficas -->
+    
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header z-index-50">
+        <nav class="navbar py-3 px-0 shadow-sm text-white position-relative">
+          <!-- Search Box-->
+          <div class="search-box shadow-sm">
+            <button class="dismiss d-flex align-items-center">
+              <svg class="svg-icon svg-icon-heavy">
+                <use xlink:href="#close-1"> </use>
+              </svg>
+            </button>
+            <form id="searchForm" action="#" role="search">
+              <input class="form-control shadow-0" type="text" placeholder="What are you looking for...">
+            </form>
+          </div>
+          <div class="container-fluid w-100">
+            <div class="navbar-holder d-flex align-items-center justify-content-between w-100">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+                  <div class="brand-text d-none d-lg-inline-block"><span>CV </span><strong>Monitoreo</strong></div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>BD</strong></div></a>
+                <!-- Toggle Button--><a class="menu-btn active" id="toggle-btn" href="#"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#">
+                </li>
+                <!-- Logout    -->
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="login.html"> 
+                  <button class="btn btn-primary mb-3" id="loginFacebook" 
+                          type="submit">
+                      <i class="fas fa-sign-out-alt"></i>
+                  </button>
+                   <use xlink:href="#security-1"> </use>
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar z-index-40">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center py-4 px-3" 
+               id="user-Info">
+          </div>
+          <!-- Sidebar Navidation Menus-->
+          <span class="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">Panel Principal</span>
+          <ul class="list-unstyled py-4">
+            <li class="sidebar-item"><a class="sidebar-link" href="index.html" >
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+                  <use xlink:href="#real-estate-1"> </use>
+                </svg>Inicio </a></li>
+            <li class="sidebar-item"><a class="sidebar-link" href="tablas.html"> 
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+                  <use xlink:href="#portfolio-grid-1"> </use>
+                </svg>Tablas </a></li>
+            <li class="sidebar-item"><a class="sidebar-link" href="graficas.html" >
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+                  <use xlink:href="#sales-up-1"> </use>
+                </svg>Graficas </a></li>
+            <li class="sidebar-item active"><a class="sidebar-link" href="about.html" >
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+                  <use xlink:href="#survey-1"> </use>
+                </svg>Acerca de </a></li>
+          </ul>
+        </nav>
+<!-- Fin header-->  
+<div class="content-inner w-100">
+    <!-- Page Header-->
+    <header class="bg-white shadow-sm px-4 py-3 z-index-20">
+      <div class="container-fluid px-0">
+        <h2 class="mb-0 p-1">Graficas</h2>
+      </div>
+    </header>
+<!-- Breadcrumb-->
+<div class="bg-white">
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 py-3">
+          <li class="breadcrumb-item"><a class="fw-light" href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active fw-light" aria-current="page">Acerca de</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Secion de infromacion-->
+  <section class="charts">
+    <div class="container-fluid">
+      <div class="row gy-4 align-items-stretch">
+        <!-- Card de imagen -->
+        <div class="col-lg-4">
+          <div class="card mb-0">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">Modelado 3D</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_04.jpeg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <!-- Card de imagen -->
+        <div class="col-lg-4">
+          <div class="card mb-0">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">Modelado 3D</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_05.jpeg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <!-- Card de imagen -->
+        <div class="col-lg-4">
+          <div class="card mb-0">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">Modelado 3D</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_06.jpeg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <!-- Card de imagen -->
+        <div class="col-lg-8">
+          <div class="card mb-0 h-100">
+            <div class="card-header d-flex align-items-center">
+              <div class="card-close">
+              </div>
+              <h3 class="h4 mb-0">1° Avance</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_01.jpg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-0">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">1° Avance</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_02.jpg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <!-- Card de imagen -->
+        <div class="col-lg-4">
+          <div class="card mb-0">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">1° Avance</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_03.jpg" width="280px" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-0 h-100">
+            <div class="card-header d-flex align-items-center">
+              <h3 class="h4 mb-0">1° Avance</h3>
+            </div>
+            <div class="card-body">
+              <img src="img/IMG_01.jpg" width="280px" class=" img-thumbnail right">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page Footer-->
+  <footer class="position-absolute bottom-0 bg-darkBlue text-white text-center py-3 w-100 text-xs" id="footer">
+    <div class="container-fluid">
+      <div class="row gy-2">
+        <div class="col-sm-6 text-sm-start">
+          <p class="mb-0">Cv Studio &copy; 2020-2021</p>
+        </div>
+        <div class="col-sm-6 text-sm-end">
+          <p class="mb-0">Visita <a href="https://google.com" class="text-white text-decoration-none">Cv Studio</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+</div>
+<!-- JavaScript files-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/graficas.js"></script>
+<script src="vendor/just-validate/js/just-validate.min.js"></script>
+<script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="js/front.js"></script>
+<script src="js/credenciales.js" type="module"></script>
+<script src="js/app.js" type="module"></script>
+<script>
+function injectSvgSprite(path) {
+
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", path, true);
+  ajax.send();
+  ajax.onload = function(e) {
+  var div = document.createElement("div");
+  div.className = 'd-none';
+  div.innerHTML = ajax.responseText;
+  document.body.insertBefore(div, document.body.childNodes[0]);
+  }
+}
+  
+</script>
+<!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- SCRIPTS -->
+
+
+</body>
+</html>

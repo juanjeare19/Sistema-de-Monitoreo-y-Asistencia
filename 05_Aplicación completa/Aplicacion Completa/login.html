@@ -1,0 +1,157 @@
+<!------------------------------------------------------------------------------------
+:*                          CV SOFTWARE STUDIO
+:*
+:*                      FECHA DE INICIO AGO-DIC/2021  
+:*
+:* Archivo      : login.html
+:* Autor        : Equipo de desarrollo Cv Studio 
+:* Fecha        : 15/Octubre/2021
+:* Compilador   : visual code, Firebase
+:* Descripcion  : Pagina de loging 
+:* Ultima modif : 14/11/2021
+:* Fecha        : Modificion                  Motivo
+:* 00/09/2021   : Header/Footer       Inicio y fin del documento html.
+:* 00/09/2021   : Main Navbar         Tener la barra de navegacion para el usuario.
+:* 00/09/2021   : Form Panel          Campos que el usuario tiene que llenar.
+:*==================================================================================
+:*
+:*---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Monitoreo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=" width=device-width, initial-scale=1, 
+                                    shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- Choices CSS-->
+    <link rel="stylesheet" 
+          href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Script graficas -->
+  </head>
+  <body>
+    <div class="page">
+      <!---------------------------------------------------------------------------->
+      <!-- Main Navbar-->
+      <!---------------------------------------------------------------------------->
+      <header class="header z-index-50">
+        <nav class="navbar py-3 px-0 shadow-sm text-white position-relative">
+          <!------------------------------------------------------------------------>
+          <!-- Search Box-->
+          <!------------------------------------------------------------------------>
+          <div class="search-box shadow-sm">
+            <button class="dismiss d-flex align-items-center">
+              <svg class="svg-icon svg-icon-heavy">
+                <use xlink:href="#close-1"> </use>
+              </svg>
+            </button>
+            <form id="searchForm" action="#" role="search">
+              <input class="form-control shadow-0" type="text" 
+                     placeholder="What are you looking for...">
+            </form>
+          </div>
+          <div class="container-fluid w-100">
+            <div class="navbar-holder d-flex align-items-center 
+                        justify-content-between w-100">
+              <!-------------------------------------------------------------------->
+              <!-- Navbar Header-->
+              <!-------------------------------------------------------------------->
+              <div class="navbar-header">
+                <!-- Navbar Brand -->
+                <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+                  <div class="brand-text d-none d-lg-inline-block"><span>CV </span>
+                    <strong>Monitoreo</strong>
+                  </div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none">
+                    <strong>BD</strong>
+                  </div>
+                </a>  
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+  <body>
+    <div class="login-page">
+      <div class="container d-flex align-items-center position-relative py-5">
+        <div class="card shadow-sm w-100 rounded overflow-hidden bg-none">
+          <div class="card-body p-0">
+            <div class="row gx-0 align-items-stretch">
+              <!-------------------------------------------------------------------->
+              <!-- Logo & Information Panel-->
+              <!-------------------------------------------------------------------->
+              <div class="col-lg-6">
+                <div class="info d-flex justify-content-center 
+                            flex-column p-4 h-100">
+                  <div class="py-5">
+                    <h1 class="display-6 fw-bold">Monitoreo</h1>
+                    <p class="fw-light mb-0">Inicia sesion y analiza tus datos.</p>
+                  </div>
+                </div>
+              </div>
+              <!-------------------------------------------------------------------->
+              <!-- Form Panel    -->
+              <!-------------------------------------------------------------------->
+              <div class="col-lg-6 bg-white">
+                <div class="d-flex align-items-center px-4 px-lg-5 h-100">
+                  <form class="login-form py-5 w-100" method="get">
+                    <div class="input-material-group mb-3">
+                      <input class="input-material" id="login-email" 
+                             type="email" name="registerEmail" 
+                             required data-validate-field="registerEmail">
+                      <label class="label-material">Email</label>
+                    </div>
+                    <div class="input-material-group mb-4">
+                      <input class="input-material" id="login-password" 
+                             type="password" name="loginPassword" 
+                             required data-validate-field="loginPassword">
+                      <label class="label-material" for="login-password">
+                        Contraseña
+                      </label>
+                    </div>
+                    <button class="btn btn-primary mb-3" 
+                            id="loginCorreo" type="submit">Iniciar Sesion
+                    </button>
+                    <button class="btn btn-primary mb-3" id="loginGoogle" 
+                            type="submit">
+                    <img 
+                    src="https://img.icons8.com/color/18/000000/google-logo.png"/>
+                    </button>
+                    <br>
+                    <a class="text-sm text-paleBlue" href="#">
+                      Olvidaste tu Contraseña?
+                    </a>
+                    <br>
+                    <small class="text-gray-500">No tienes cuenta?</small>
+                    <a class="text-sm text-paleBlue" href="registro.html">
+                      Registrar
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center position-absolute bottom-0 start-0 w-100 z-index-20">
+        <p class="mb-0">Visita 
+          <a href="https://google.com" class="text-white text-decoration-none">
+            Cv Studio
+          </a>
+        </p>
+        </p>
+      </div>
+    </div>
+    <script src="js/credenciales.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
